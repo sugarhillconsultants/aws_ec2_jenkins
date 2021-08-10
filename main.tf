@@ -1,13 +1,13 @@
 provider "aws" {
   region  = "us-east-1"
-  profile = "romeopeay"
+  profile = "RomeoPeay"
 }
 
 resource "aws_instance" "ec2-instance" {
-  ami           = "ami-0732b62d310b80e97"
+  ami           = "ami-0c2b8ca1dad447f8a"
   instance_type = "t2.micro"
   vpc_security_group_ids = [aws_security_group.ec2-instance-sg.id]
-  key_name = aws_key_pair.keypair.key_name
+  key_name = aws_key_pair.Uipath.pem
   user_data = file("install_jenkins.sh")
 
   tags = {
