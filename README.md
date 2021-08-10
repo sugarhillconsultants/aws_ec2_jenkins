@@ -1,3 +1,3 @@
-# aws_ec2_instance
-Deploy ec2-instance using terraform in aws
-This is a simple project to create ec2instance and run userdata using terraform 
+# Create an AWS EC2 Instance
+Using Terraform, deploy an AWS EC2 instance
+Run userdata
